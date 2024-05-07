@@ -126,7 +126,7 @@ nav ul li a {
 
 .section .content-bg {
     width: 80%;
-    height: 85%;
+    height: 80%;
     text-align: center;
     line-heigth: center;
     color: #C6D0F5;
@@ -135,14 +135,14 @@ nav ul li a {
     animation: fadeInUp 1s ease-in-out;
     /* Parallax effect for content */
     transform: translateY(10%);
-    background-color: rgb(48, 52, 70, 0.3);
+    background-color: rgb(48, 52, 70, 0.2);
     border-radius: 10px;
-    padding: 40px;
+    padding: 20px;
 }
 
 .section .content-side {
     width: 40%;
-    height: 85%;
+    height: 80%;
     text-align: center;
     color: #C6D0F5;
     z-index: 2; /* Set z-index to bring it above the main background */
@@ -150,9 +150,9 @@ nav ul li a {
     animation: fadeInUp 1s ease-in-out;
     /* Parallax effect for content */
     transform: translateY(10%);
-    background-color: rgb(48, 52, 70, 0.5);
+    background-color: rgb(48, 52, 70, 0.2);
     border-radius: 10px;
-    padding: 40px;
+    padding: 20px;
 }
 
 @keyframes fadeInUp {
