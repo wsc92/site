@@ -16,7 +16,6 @@ body {
     background-position: center;
     z-index: -2;
 }
-
 /* Navigation */
 nav {
     position: fixed;
@@ -46,13 +45,47 @@ nav ul li a {
     font-weight: bold;
     font-size: 28px;
 }
-.navbar-brand {
-    text-decoration: none;
+
+/* Brand link */
+.navbar-brand.cogent-brand {
     color: #C6D0F5;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 28px; /* Adjust the font size as needed */
 }
 
+/* Brand Hover Toggler*/
+.navbar-brand.cogent-brand:hover {
+    color: #F3D5CF; /* Set brand link color on hover */
+}
+
+/* Toggler button */
+.navbar-toggler {
+    border-color: #C6D0F5; /* Set border color */
+}
+
+.navbar-toggler-icon {
+    color: #C6D0F5; /* Set icon color */
+}
+
+/* Toggler button hover */
+.navbar-toggler:hover {
+    background-color: #C6D0F5; /* Set background color on hover */
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    color: #303446; /* Set icon color on hover */
+}
+
+/* Navbar links */
+.navbar-nav .nav-item .nav-link {
+    color: #C6D0F5; /* Set link color */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #F3D5CF; /* Set link color on hover */
+}
+
+/* Page Section formats*/
 .section {
     position: relative;
     overflow: hidden;
@@ -61,6 +94,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     z-index: 1; /* Set z-index to bring it to the front */
+    transform: translateY(0%);
 }
 
 .section .section-bg {
@@ -71,13 +105,11 @@ nav ul li a {
     height: 100%; /* Ensure section-bg covers full height of its parent container */
     background-color: rgba(48, 52, 70, 0.5); /* Set the background color with opacity */
     z-index: -1; /* Set z-index to be behind section content */
-    border-radius: 10px; /* Add rounded corners */
     /* Adjust background position for parallax effect */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    transform: translateY(0%);
 }
 
 
@@ -89,19 +121,38 @@ nav ul li a {
     animation: fadeInUp 1s ease-in-out;
     /* Parallax effect for content */
     transform: translateY(15%);
+    font-size: 78px;
 }
 
-.section .content {
+.section .content-bg {
+    width: 80%;
+    height: 85%;
+    text-align: center;
+    line-heigth: center;
+    color: #C6D0F5;
+    z-index: 2; /* Set z-index to bring it above the main background */
+    position: relative; /* Ensure proper stacking context */
+    animation: fadeInUp 1s ease-in-out;
+    /* Parallax effect for content */
+    transform: translateY(10%);
+    background-color: rgb(48, 52, 70, 0.3);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.section .content-side {
+    width: 40%;
+    height: 85%;
     text-align: center;
     color: #C6D0F5;
     z-index: 2; /* Set z-index to bring it above the main background */
     position: relative; /* Ensure proper stacking context */
     animation: fadeInUp 1s ease-in-out;
     /* Parallax effect for content */
-    transform: translateY(15%);
+    transform: translateY(10%);
     background-color: rgb(48, 52, 70, 0.5);
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px;
 }
 
 @keyframes fadeInUp {
