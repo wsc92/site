@@ -11,7 +11,7 @@ body {
     position: fixed;
     width: 100%;
     height: 1980px;
-    background-image: url('images/cloud.jpg'); /* Set your main background image */
+    background-image: url('images/background.jpg'); /* Set your main background image */
     background-size: cover;
     background-position: center;
     z-index: -2;
